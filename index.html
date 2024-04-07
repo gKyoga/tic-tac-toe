@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="instrucao">
+                <h1>Jogo da Velha!!</h1>
+                <h3>Bem-vindo ao nosso site de jogo da velha! Prepare-se para desafiar sua estratégia e habilidade neste clássico jogo de tabuleiro. Divirta-se e boa sorte!</h3>
+                <p>O primeiro a jogar é o player <b>X</b></p>
+                <p>O primeiro a jogar é o player <b>O</b></p> 
+            </div>
+
+            <div class="jogo">
+                <div class="linha">
+                    <input type="text" id= "b1" 
+                    class="cell" onclick="myfunc_3(); myfunc();" 
+                    readonly>
+
+                    <input type="text" id= "b2" 
+                    class="cell" onclick="myfunc_4(); myfunc();" 
+                    readonly>
+
+                    <input type="text" id= "b3" 
+                    class="cell" onclick="myfunc_5(); myfunc();" 
+                    readonly>
+                </div>
+
+                <div class="linha">
+                    <input type="text" id= "b4" 
+                       class="cell" onclick="myfunc_6(); myfunc();" 
+                       readonly>
+
+                    <input type="text" id= "b5" 
+                       class="cell" onclick="myfunc_7(); myfunc();" 
+                       readonly>
+
+                    <input type="text" id= "b6" 
+                       class="cell" onclick="myfunc_8(); myfunc();" 
+                       readonly>
+
+                </div>
+
+                <div class="linha">
+                    <input type="text" id= "b7" 
+                       class="cell" onclick="myfunc_9(); myfunc();" 
+                       readonly>
+
+                    <input type="text" id= "b8" 
+                       class="cell" onclick="myfunc_10(); myfunc();" 
+                       readonly>
+
+                    <input type="text" id= "b9" 
+                       class="cell" onclick="myfunc_11(); myfunc();" 
+                       readonly>
+
+                </div>
+
+                <button id="reset" onclick="myfunc_2()"> 
+                    REINICIAR
+                </button> 
+            </div>
+            
+            <p id="print"></p>             
+
+        </main>
+        
+
+
+    </body>
+    
+    <script src="/back/script.js"></script>
+</html>
